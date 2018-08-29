@@ -1,33 +1,30 @@
 {
-
-    "manifest_version": 2,
-    "description": "",
-    "name": "training-web-extension",
-    "version": "1.0",
-    "homepage_url": "https://github.com/luchopcerra/training-web-extension",
-    "icons": { "18": "icons/baseline_search_black_18dp.png" },
-    "browser_action": {
-        "default_icon": "icons/baseline_search_black_18dp.png",
-        "default_title": "Search titles in wikipedia"
-    },
-    "content_scripts": [
-        {
-            "matches": ["<all_urls>"],
-            "js": [
-                "node_modules/webextension-polyfill/dist/browser-polyfill.js",
-                "shared/wordsFromDom.js",
-                "content_scripts/index.js"
-            ]
-        }
-      ],
-      "background": {
-        "scripts": [
-            "node_modules/webextension-polyfill/dist/browser-polyfill.js",
-            "shared/searchEngine.js",
-            "background_scripts/background.js"
-        ]
-      },
-    "permissions": [
-    "activeTab"
+  "manifest_version": 2,
+  "description": "",
+  "name": "training-web-extension",
+  "version": "1.0",
+  "homepage_url": "https://github.com/luchopcerra/training-web-extension",
+  "icons": { "18": "icons/baseline_search_black_18dp.png" },
+  "browser_action": {
+    "default_icon": "icons/baseline_search_black_18dp.png",
+    "default_title": "Search titles in wikipedia"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "node_modules/webextension-polyfill/dist/browser-polyfill.js",
+        "shared/wordsFromDom.js",
+        "content_scripts/index.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "node_modules/webextension-polyfill/dist/browser-polyfill.js",
+      "shared/searchEngine.js",
+      "background_scripts/background.js"
     ]
-  }
+  },
+  "permissions": ["activeTab"]
+}
