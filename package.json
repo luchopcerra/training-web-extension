@@ -1,0 +1,30 @@
+{
+  "name": "training-web-extension",
+  "version": "1.0.0",
+  "description": "extensión de entrenamiento",
+  "main": "content_scripts/index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "webextension-polyfill": "^0.3.1"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luchopcerra/training-web-extension.git"
+  },
+  "keywords": [
+    "web-extension"
+  ],
+  "author": "Luciano Pérez Cerra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luchopcerra/training-web-extension/issues"
+  },
+  "homepage": "https://github.com/luchopcerra/training-web-extension#readme"
+}
