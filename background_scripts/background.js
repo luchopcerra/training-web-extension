@@ -1,4 +1,4 @@
-const searchEngine = new SearchEngine();
+const searchEngine = new SearchEngineConnector();
 
 browser.browserAction.onClicked.addListener((tab) => {
     // disable the active tab
