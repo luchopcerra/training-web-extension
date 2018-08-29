@@ -1,5 +1,5 @@
 class WordsFromDom {
-    constructor(fromTag, condition){
+    constructor(fromTag = 'H1', condition = ()=>true){
         this.fromTag = fromTag;
         this.condition = condition;
         this.words =    Array.from(document.getElementsByTagName(fromTag))
